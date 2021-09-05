@@ -3,7 +3,7 @@ import kotlin.math.abs
 class Solution {
     fun reverse(x: Int): Int {
         val temp = abs(x).toString().reversed().toCharArray()
-        var result: String = ""
+        var result= ""
         val minus = '-'
         val zero = '0'
         var isFirstZero = true
@@ -13,7 +13,7 @@ class Solution {
         }
 
         for (i in temp.indices) {
-            if (temp[i] == '0' && isFirstZero) {
+            if (temp[i] == zero && isFirstZero) {
             } else {
                 isFirstZero = false
                 result += temp[i].toString()
