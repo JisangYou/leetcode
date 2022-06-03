@@ -16,11 +16,11 @@ class Solution {
 
         if (left != right) {
             pivot++
-            left = 0
-            right = 0
         } else {
             idx = pivot
         }
+        left = 0
+        right = 0
     }
     return idx
     }
