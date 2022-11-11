@@ -9,7 +9,7 @@ class Solution {
         //Move in Four Directions
 
         //Move in Four Directions
-        val directions = arrayOf(intArrayOf(1, 0), intArrayOf(0, 1), intArrayOf(-1, 0), intArrayOf(0, -1))
+        val directions = arrayOf(intArrayOf(1, 0), intArrayOf(-1, 0), intArrayOf(0, 1), intArrayOf(0, -1))
         val qu: Queue<IntArray> = LinkedList()
 
         for (i in 0 until row) {
