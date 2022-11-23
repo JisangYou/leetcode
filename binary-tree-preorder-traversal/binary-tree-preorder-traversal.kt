@@ -8,15 +8,14 @@
  *     var right: TreeNode? = null
  * }
  */
-
 class Solution {
-    var arr: ArrayList<Int> = arrayListOf()
+    var array: ArrayList<Int> = arrayListOf()
     fun preorderTraversal(root: TreeNode?): List<Int> {
         if (root?.`val` != null) {
-            arr.add(root.`val`!!)
+            array.add(root.`val`!!)
         }
         if (root?.left != null) preorderTraversal(root.left)
         if (root?.right != null) preorderTraversal(root.right)
-        return arr
+        return array
     }
 }
